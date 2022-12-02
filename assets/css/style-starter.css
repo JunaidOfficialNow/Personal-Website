@@ -10434,7 +10434,7 @@ h4.sub-title {
   -ms-transition: 0.3s ease-in; }
 
 .w3l-main-banner .banner-view {
-  background: url(../images/photo-1516116216624-53e697fedbea.jpeg) no-repeat right;
+  background: url(../images/1.jpg) no-repeat right;
   background-size: cover;
   min-height: 100vh;
   position: relative;
@@ -10519,7 +10519,7 @@ h4.sub-title {
   .w3l-feature-3 span.number img {
     vertical-align: -webkit-baseline-middle; }
   .w3l-feature-3 .top-bottom {
-    background: url(../images/3.jpg) no-repeat center;
+    background: url(../images/meAtOffice2.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -10962,7 +10962,7 @@ body:after {
     font-size: 12px; } }
 
 .services-12 .form-12-content {
-  background: url("../images/2.jpg") no-repeat center;
+  background: url("../images/office2.jpg") no-repeat center;
   background-size: cover;
   padding: 5rem 0px;
   background-attachment: fixed;
@@ -11595,6 +11595,7 @@ body:after {
 
 /*--//content with photo5--*/
 .box-wrap {
+  min-height: 300.4px;
   margin-top: 30px;
   padding: 40px 20px;
   transition: all 0.5s ease 0s;
@@ -11608,7 +11609,7 @@ body:after {
 
 .box-wrap img {
   max-width: 55px;
-  display: block;
+   display: block;
   margin: 0 auto; }
 
 .box-wrap h4 a {
@@ -12097,8 +12098,8 @@ body:after {
     margin: 3em 0; } }
 
 .w3l-about-breadcrum .breadcrum-bg {
-  background-size: cover;
-  background-image: linear-gradient(to right, rgba(42, 42, 42, 0.71), rgba(38, 40, 40, 0.78)), url(../images/2.jpg);
+  background-size:cover;
+  background-image: linear-gradient(to right, rgba(42, 42, 42, 0.71), rgba(38, 40, 40, 0.78)), url(../images/fernweh2.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   padding-top: 86px; }
