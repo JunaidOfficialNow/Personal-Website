@@ -14,6 +14,7 @@ Author URL: http://w3layouts.com
     <link href="//fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/letter-j-5151995-4297813.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- //web fonts -->
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
@@ -71,7 +72,7 @@ Author URL: http://w3layouts.com
                <!-- contact form -->
                <div class="contacts12-main col-lg-6 ">
                    
-                <form onsubmit="Contact()" class="main-input">
+                <form onsubmit="Contact()" class="main-input" id="submit-form">
                     <div class="top-inputs d-grid">
                         <input type="text" placeholder="Name" name="w3lName" id="w3lName" required="">
                        
@@ -189,6 +190,23 @@ Author URL: http://w3layouts.com
                      function Contact(){
                       alert("Contact request submitted successfully")
                      }
+                     $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzwW1fOZkQCSXcveLOAzDMKFbz0fb_FHTyl1zVBZ4RaE3BgQfJKpArUANAQ9TI4dY7Qcg/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
                  </script>
                  <!-- /move top -->
 </section>
